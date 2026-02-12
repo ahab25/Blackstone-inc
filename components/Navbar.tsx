@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiMenu, HiX } from 'react-icons/hi'
+import Logo from './Logo'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,14 +38,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-blackstone-yellow rounded-lg flex items-center justify-center">
-              <span className="text-blackstone-black font-bold text-xl">BS</span>
-            </div>
-            <span className="text-white font-bold text-xl hidden sm:block">
-              Blackstone <span className="text-blackstone-yellow">Inc.</span>
-            </span>
-          </Link>
+          <Logo showText={true} variant="light" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

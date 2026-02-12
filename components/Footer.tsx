@@ -1,48 +1,44 @@
 import Link from 'next/link'
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
     <footer className="bg-blackstone-black text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-blackstone-yellow rounded-lg flex items-center justify-center">
-                <span className="text-blackstone-black font-bold">BS</span>
-              </div>
-              <span className="text-white font-bold text-lg">
-                Blackstone <span className="text-blackstone-yellow">Inc.</span>
-              </span>
+            <div className="mb-4 md:mb-6">
+              <Logo showText={true} variant="light" />
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
               Registered with Pakistan Engineering Council & Pakistan Federal Board of Revenue.
             </p>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold mb-4 flex items-center">
+            <h3 className="text-white font-semibold mb-4 md:mb-6 flex items-center">
               <span className="w-1 h-5 bg-blackstone-yellow mr-2"></span>
               Contact Info
             </h3>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <FaMapMarkerAlt className="text-blackstone-yellow mt-1 flex-shrink-0" />
-                <span className="text-sm text-gray-400">
+            <ul className="space-y-3 md:space-y-4">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-blackstone-yellow mt-0.5 md:mt-1 flex-shrink-0 w-4 h-4 md:w-5 md:h-5" />
+                <span className="text-sm md:text-base text-gray-400 leading-relaxed break-words">
                   Alamdar Chowk, Qasimabad, Hyderabad, Sindh.
                 </span>
               </li>
-              <li className="flex items-center space-x-3">
-                <FaEnvelope className="text-blackstone-yellow flex-shrink-0" />
-                <a href="mailto:info@blackstoneinc.pk" className="text-gray-400 hover:text-blackstone-yellow transition-colors text-sm">
+              <li className="flex items-center gap-3">
+                <FaEnvelope className="text-blackstone-yellow flex-shrink-0 w-4 h-4 md:w-5 md:h-5" />
+                <a href="mailto:info@blackstoneinc.pk" className="text-sm md:text-base text-gray-400 hover:text-blackstone-yellow transition-colors break-all">
                   info@blackstoneinc.pk
                 </a>
               </li>
-              <li className="flex items-center space-x-3">
-                <FaGlobe className="text-blackstone-yellow flex-shrink-0" />
-                <a href="http://blackstoneinc.pk" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blackstone-yellow transition-colors text-sm">
+              <li className="flex items-center gap-3">
+                <FaGlobe className="text-blackstone-yellow flex-shrink-0 w-4 h-4 md:w-5 md:h-5" />
+                <a href="http://blackstoneinc.pk" target="_blank" rel="noopener noreferrer" className="text-sm md:text-base text-gray-400 hover:text-blackstone-yellow transition-colors break-all">
                   http://blackstoneinc.pk
                 </a>
               </li>
@@ -51,39 +47,39 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-white font-semibold mb-4 flex items-center">
+            <h3 className="text-white font-semibold mb-4 md:mb-6 flex items-center">
               <span className="w-1 h-5 bg-blackstone-yellow mr-2"></span>
               Services
             </h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 md:space-y-3">
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-blackstone-yellow transition-all text-sm inline-block hover:translate-x-1">
+                <Link href="/services" className="text-gray-400 hover:text-blackstone-yellow transition-all text-sm md:text-base inline-block hover:translate-x-1 break-words">
                   Commercial & Institutional Building Construction
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-blackstone-yellow transition-all text-sm inline-block hover:translate-x-1">
+                <Link href="/services" className="text-gray-400 hover:text-blackstone-yellow transition-all text-sm md:text-base inline-block hover:translate-x-1 break-words">
                   Roads and Related Structures Construction
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-blackstone-yellow transition-all text-sm inline-block hover:translate-x-1">
+                <Link href="/services" className="text-gray-400 hover:text-blackstone-yellow transition-all text-sm md:text-base inline-block hover:translate-x-1 break-words">
                   Site Preparation & Services Contractors
                 </Link>
               </li>
             </ul>
-            <div className="mt-6 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors">
-                <FaFacebook className="w-5 h-5" />
+            <div className="mt-6 md:mt-8 flex space-x-4">
+              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="Facebook">
+                <FaFacebook className="w-5 h-5 md:w-6 md:h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors">
-                <FaTwitter className="w-5 h-5" />
+              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="Twitter">
+                <FaTwitter className="w-5 h-5 md:w-6 md:h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors">
-                <FaLinkedin className="w-5 h-5" />
+              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="LinkedIn">
+                <FaLinkedin className="w-5 h-5 md:w-6 md:h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors">
-                <FaInstagram className="w-5 h-5" />
+              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="Instagram">
+                <FaInstagram className="w-5 h-5 md:w-6 md:h-6" />
               </a>
             </div>
           </div>
