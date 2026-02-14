@@ -2,10 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
-  title: 'Blackstone Incorporated - Professional Construction Services',
+  title: 'Blackstone Inc. PK',
   description: 'Leading construction company providing exceptional building solutions with expertise, quality, and reliability.',
   keywords: 'construction, building, construction company, contractors, Blackstone',
   icons: {
@@ -27,7 +26,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <WhatsAppButton />
       </body>
     </html>
   )

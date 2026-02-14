@@ -64,10 +64,10 @@ export default function Home() {
   ]
 
   const stats = [
-    { number: '500+', label: 'Projects Completed' },
-    { number: '25+', label: 'Years Experience' },
+    { number: '100+', label: 'Projects Completed' },
+    { number: '10+', label: 'Years Experience' },
     { number: '98%', label: 'Client Satisfaction' },
-    { number: '150+', label: 'Expert Team Members' },
+    { number: '50+', label: 'Expert Team Members' },
   ]
 
   const services = [
@@ -102,7 +102,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="inline-block mb-4 px-4 py-2 bg-blackstone-yellow/20 backdrop-blur-sm rounded-full border border-blackstone-yellow/30"
           >
-            <span className="text-blackstone-yellow font-semibold">Building Excellence Since 1995</span>
+            <span className="text-blackstone-yellow font-semibold">Building Excellence Since 2015</span>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}

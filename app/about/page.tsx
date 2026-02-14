@@ -29,35 +29,35 @@ export default function About() {
   ]
 
   const achievements = [
-    { number: '500+', label: 'Projects Completed', icon: <FaChartLine className="w-6 h-6" /> },
-    { number: '25+', label: 'Years of Excellence', icon: <FaAward className="w-6 h-6" /> },
-    { number: '150+', label: 'Team Members', icon: <FaUsers className="w-6 h-6" /> },
+    { number: '100+', label: 'Projects Completed', icon: <FaChartLine className="w-6 h-6" /> },
+    { number: '10+', label: 'Years of Excellence', icon: <FaAward className="w-6 h-6" /> },
+    { number: '50+', label: 'Team Members', icon: <FaUsers className="w-6 h-6" /> },
     { number: '98%', label: 'Client Satisfaction', icon: <FaHandshake className="w-6 h-6" /> },
   ]
 
   const timeline = [
     {
-      year: '1995',
+      year: '2015',
       title: 'Foundation',
       description: 'Blackstone Incorporated was founded with a vision to revolutionize the construction industry.',
     },
     {
-      year: '2005',
+      year: '2019',
       title: 'Expansion',
       description: 'Expanded operations to serve commercial and industrial clients across multiple states.',
     },
     {
-      year: '2015',
+      year: '2022',
       title: 'Innovation',
       description: 'Introduced sustainable building practices and green construction technologies.',
     },
     {
-      year: '2020',
+      year: '2024',
       title: 'Recognition',
       description: 'Received multiple industry awards for excellence in construction and project management.',
     },
     {
-      year: '2024',
+      year: '2025',
       title: 'Future',
       description: 'Continuing to lead the industry with innovative solutions and exceptional service.',
     },
@@ -89,7 +89,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              Building excellence for over 25 years with unwavering commitment to quality and innovation
+              Building excellence for over 10 years with unwavering commitment to quality and innovation
             </p>
           </motion.div>
         </motion.div>
@@ -110,13 +110,13 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Founded in 1995, Blackstone Incorporated has grown from a small local construction company
+                  Founded in 2015, Blackstone Incorporated has grown from a small local construction company
                   into a leading industry player known for excellence, innovation, and reliability. Our journey
                   began with a simple mission: to build structures that stand the test of time while exceeding
                   client expectations.
                 </p>
                 <p>
-                  Over the past 25+ years, we've completed over 500 projects ranging from residential homes
+                  Over the past 10+ years, we've completed over 100 projects ranging from residential homes
                   to large-scale commercial and industrial facilities. Our success is built on a foundation
                   of skilled craftsmanship, cutting-edge technology, and an unwavering commitment to quality.
                 </p>

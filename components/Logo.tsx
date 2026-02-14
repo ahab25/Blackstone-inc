@@ -5,15 +5,17 @@ import Link from 'next/link'
 interface LogoProps {
   className?: string
   showText?: boolean
+  showTagline?: boolean
   variant?: 'light' | 'dark'
 }
 
-export default function Logo({ className = '', showText = true, variant = 'light' }: LogoProps) {
+export default function Logo({ className = '', showText = true, showTagline = false, variant = 'light' }: LogoProps) {
   const textColor = variant === 'light' ? 'text-white' : 'text-blackstone-black'
   const incColor = variant === 'light' ? 'text-white' : 'text-blackstone-black'
+  const taglineColor = variant === 'light' ? 'text-white' : 'text-gray-600'
   
-  return (
-    <Link href="/" className={`flex items-center ${className}`}>
+  const logoContent = (
+    <>
       <div className="flex items-center">
         {/* BLACKSTONE text on black background */}
         <div className="bg-blackstone-black px-3 py-1.5 md:px-4 md:py-2 rounded-sm">
@@ -28,6 +30,17 @@ export default function Logo({ className = '', showText = true, variant = 'light
           </span>
         )}
       </div>
+      {showTagline && (
+        <span className={`block mt-1 text-xs md:text-sm ${taglineColor} font-medium tracking-wide`}>
+          Government Contractor and Supplier
+        </span>
+      )}
+    </>
+  )
+  
+  return (
+    <Link href="/" className={`flex flex-col items-start ${className}`}>
+      {logoContent}
     </Link>
   )
 }

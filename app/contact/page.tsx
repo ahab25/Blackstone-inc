@@ -50,7 +50,7 @@ export default function Contact() {
     {
       icon: <FaMapMarkerAlt className="w-6 h-6" />,
       title: 'Address',
-      content: 'Alamdar Chowk, Qasimabad\nHyderabad, Sindh',
+      content: '2-B, Anoop Tower, Alamdar Chowk, Qasimabad\nHyderabad, Sindh, Pakistan',
     },
     {
       icon: <FaEnvelope className="w-6 h-6" />,
@@ -291,51 +291,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="bg-white rounded-2xl shadow-xl overflow-hidden"
-          >
-            <div className="p-6 border-b border-gray-200">
-              <h3 className="text-2xl md:text-3xl font-bold text-blackstone-black mb-2 flex items-center gap-3">
-                <FaMapMarkerAlt className="text-blackstone-yellow" />
-                Our Location
-              </h3>
-              <p className="text-gray-600">Alamdar Chowk, Qasimabad, Hyderabad, Sindh</p>
-            </div>
-            <div className="relative w-full h-96 md:h-[500px]">
-              <iframe
-                src="https://www.google.com/maps?q=Alamdar+Chowk,+Qasimabad,+Hyderabad,+Sindh,+Pakistan&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full rounded-b-2xl"
-                title="Blackstone Incorporated Location - Alamdar Chowk, Qasimabad, Hyderabad, Sindh"
-              />
-            </div>
-            <div className="p-6 bg-gray-50">
-              <a
-                href="https://www.google.com/maps/dir/?api=1&destination=Alamdar+Chowk,+Qasimabad,+Hyderabad,+Sindh,+Pakistan"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blackstone-yellow text-blackstone-black font-semibold rounded-lg hover:bg-blackstone-yellow-dark transition-all shadow-md hover:shadow-lg"
-              >
-                <FaMapMarkerAlt />
-                Get Directions
-              </a>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>

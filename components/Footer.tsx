@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa'
 import Logo from './Logo'
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="mb-4 md:mb-6">
-              <Logo showText={true} variant="light" />
+              <Logo showText={true} showTagline={true} variant="light" />
             </div>
             <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
               Registered with Pakistan Engineering Council & Pakistan Federal Board of Revenue.
@@ -27,7 +27,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-blackstone-yellow mt-0.5 md:mt-1 flex-shrink-0 w-4 h-4 md:w-5 md:h-5" />
                 <span className="text-sm md:text-base text-gray-400 leading-relaxed break-words">
-                  Alamdar Chowk, Qasimabad, Hyderabad, Sindh.
+                  2-B, Anoop Tower, Alamdar Chowk, Qasimabad, Hyderabad, Sindh, Pakistan.
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -68,20 +68,6 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-            <div className="mt-6 md:mt-8 flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="Facebook">
-                <FaFacebook className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="Twitter">
-                <FaTwitter className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="LinkedIn">
-                <FaLinkedin className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blackstone-yellow transition-colors" aria-label="Instagram">
-                <FaInstagram className="w-5 h-5 md:w-6 md:h-6" />
-              </a>
-            </div>
           </div>
         </div>
 
